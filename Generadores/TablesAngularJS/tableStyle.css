@@ -1,0 +1,9 @@
+.table > tbody > tr:hover {
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
+
+.table > tbody > tr > td:focus {
+    border-bottom: solid 3px #7c99ff;
+    cursor: pointer;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="TablaDemo">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="tableStyle.css">
+
+    <!-- Normalize 7.0.0-->
+    <!--<link rel="stylesheet" href="normalize_7_0_0.css">-->
+    <!-- Fin Normalize-->
+
+    <!--JQuery 3.2.1-->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!--JQuery Fin-->
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--Bootstrap fin-->
+
+    <!--AngularJS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="TableAngular.js"></script>
+    <script src="tableApp.js"></script>
+    <!--AngularJS Fin-->
+
+</head>
+<body ng-cloak ng-app="TablaDemo">
+    <br>
+    <div class="container" ng-controller="TablaCtrl">
+        <h1>Tabla con contenido editable</h1>
+        <br>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Correo Electrónico</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="item in lista">
+                        <td style="cursor: not-allowed;">
+                            {{$index + 1}}
+                        </td>
+                        <td editable-td row="{{$index}}" field="nombres">
+                            {{item.nombres}}
+                        </td>
+                        <td editable-td row="{{$index}}" field="apellidos">
+                            {{item.apellidos}}
+                        </td>
+                        <td editable-td row="{{$index}}" field="email">
+                            {{item.email}}
+                        </td>
+                        <td>
+                            <span class="glyphicon glyphicon-trash" style="cursor: pointer;" ng-click='eliminar($index)' />
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Correo Electrónico</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="item in lista2">
+                        <td style="cursor: not-allowed;">
+                            {{$index + 1}}
+                        </td>
+                        <td editable-td2 row="{{$index}}" field="nombres">
+                            {{item.nombres}}
+                        </td>
+                        <td editable-td2 row="{{$index}}" field="apellidos">
+                            {{item.apellidos}}
+                        </td>
+                        <td editable-td2 row="{{$index}}" field="email">
+                            {{item.email}}
+                        </td>
+                        <td>
+                            <span class="glyphicon glyphicon-trash" style="cursor: pointer;" ng-click='eliminar($index)' />
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="btn-group">
+                    <button class="btn btn-default" ng-click='agregar()'>
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                    <button type="button" class="btn btn-default" ng-click='recuperarValores()'>Recuperar Valores</button>
+                </div>
+                <br>
+                <br>
+                <div id='JSON' />
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
