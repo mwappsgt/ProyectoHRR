@@ -19,3 +19,9 @@ Route::get('/reservacion', function () {
     return view('reservacion');
 });
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/verDisponibilidad', 'PHPController@verDisponibilidad');

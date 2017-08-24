@@ -23,6 +23,7 @@ app.controller('reservacionController', function($scope, $http){
 
 	//Funcion que sirve para solicitar que habitaciones estan disponibles :D
 	$scope.enviarFecha = function()	{
+
 		$(".dob2").hide();
 		$(".trips").hide();
 		$scope.habporsel=[];
@@ -34,37 +35,61 @@ app.controller('reservacionController', function($scope, $http){
 			console.log("aqui no");
 			if($scope.reservar.dobles>0){
 				$(".dob2").show();
+
+				$http.post("/verDisponibilidad",{tipo:"doble",fechaIn:$scope.reservar.fechaIn,fechaOut:$scope.reservar.fechaOut}).then(
+                    function(obj){
+                        alert(JSON.stringify(obj.data))
+                    	$scope.habporsel = obj.data;
+                    }
+                ).catch(
+                    function(err){
+                        console.log("Error: "+err)
+                    }
+                );
+
 				for(var i=0; i<8; i++){
-					$scope.aux.num=i+1;
-					$scope.habporsel.push($scope.aux);
+					//$scope.aux.num=i+1;
+// 					$scope.habporsel.push($scope.aux);
 					$scope.aux={};
 				}
 			}
 			if($scope.reservar.triples>0){
 				$(".trips").show();
+
+				$http.post("/verDisponibilidad",{tipo:"triple",fechaIn:$scope.reservar.fechaIn,fechaOut:$scope.reservar.fechaOut}).then(
+                    function(obj){
+                        alert(JSON.stringify(obj.data))
+                        $scope.triHabsel = obj.data
+                    }
+                ).catch(
+                    function(err){
+                        console.log("Error: "+err)
+                    }
+                );
+
 				for(var i=0; i<8; i++){
-					$scope.aux.num=i+1;
-					$scope.triHabsel.push($scope.aux);
+					//$scope.aux.num=i+1;
+					//$scope.triHabsel.push($scope.aux);
 					$scope.aux={};
 				}
 			}
 
-			$http.post("//",{
-				fechaIn : $scope.reservar.fechaIn,
-				fechaOut: $scope.reservar.fechaOut,
-				dobles  : $scope.reservar.dobles,
-				triples : $scope.reservar.triples
-			})
-			.success(function(data,status,headers,config){
-				//ingresar los datos en:
-				//habitaciones dobles
-				$scope.habporsel = [];
-				//arreglos de las habitaciones triples
-				$scope.triHabsel = [];
-			})
-			.error(function(error,status,headers,config){
-				console.log(error);
-			})
+			// $http.post("//",{
+			// 	fechaIn : $scope.reservar.fechaIn,
+			// 	fechaOut: $scope.reservar.fechaOut,
+			// 	dobles  : $scope.reservar.dobles,
+			// 	triples : $scope.reservar.triples
+			// })
+			// .success(function(data,status,headers,config){
+			// 	//ingresar los datos en:
+			// 	//habitaciones dobles
+			// 	$scope.habporsel = [];
+			// 	//arreglos de las habitaciones triples
+			// 	$scope.triHabsel = [];
+			// })
+			// .error(function(error,status,headers,config){
+			// 	console.log(error);
+			// })
 
 		}else{
 			console.log('hola');
