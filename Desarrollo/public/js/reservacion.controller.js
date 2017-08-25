@@ -28,6 +28,8 @@ app.controller('reservacionController', function($scope, $http){
 		$(".trips").hide();
 		$scope.habporsel=[];
 		$scope.habseld = [];
+		$scope.triHabsel = [];
+		$scope.triHabseld = [];
 		// console.log(reservar.fechaOut);
 		console.log($scope.reservar);
 		if($scope.reservar.dobles!= null || $scope.reservar.triples!= null){
