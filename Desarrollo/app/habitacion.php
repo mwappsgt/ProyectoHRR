@@ -9,7 +9,7 @@ class habitacion extends Model
     protected $table = "habitacion";
 
     protected $fillable = [
-        'numero', 'tipo', 'extra','camas','precio','tamanio','id_hotel'
+        'numero', 'tipo', 'des', 'extra','camas','precio','tamanio','id_hotel'
     ];
 
 }

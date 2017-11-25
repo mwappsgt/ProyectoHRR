@@ -1,0 +1,214 @@
+<manifest alg="2" build="2017.0.0.363" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="www.hotelrioreu.com" resolutions="1x" timestamp="1509677758281">
+  <folder name="css">
+    <file name="site_global.css" crc="135958327"/>
+    <file name="master_a-p_g_-maestra.css" crc="264101434" ref="triple:index:reservacion:extra:doble:turismo:galeria:restaurante"/>
+    <file name="nomq_preview_master_a-p_g_-maestra.css" crc="4081677739" ref="triple:index:reservacion:extra:doble:turismo:galeria:restaurante"/>
+    <file name="triple.css" crc="4036516536" ref="triple"/>
+    <file name="nomq_triple.css" crc="4084215755" ref="triple"/>
+    <file name="index.css" crc="4017343066" ref="index"/>
+    <file name="nomq_index.css" crc="193091247" ref="index"/>
+    <file name="reservacion.css" crc="3916578512" ref="reservacion"/>
+    <file name="nomq_reservacion.css" crc="3769995724" ref="reservacion"/>
+    <file name="extra.css" crc="340732783" ref="extra"/>
+    <file name="nomq_extra.css" crc="3924355730" ref="extra"/>
+    <file name="doble.css" crc="257928371" ref="doble"/>
+    <file name="nomq_doble.css" crc="3964674696" ref="doble"/>
+    <file name="turismo.css" crc="50613408" ref="turismo"/>
+    <file name="nomq_turismo.css" crc="4232173819" ref="turismo"/>
+    <file name="galeria.css" crc="4116490969" ref="galeria"/>
+    <file name="nomq_galeria.css" crc="152583213" ref="galeria"/>
+    <file name="restaurante.css" crc="4045843414" ref="restaurante"/>
+    <file name="nomq_restaurante.css" crc="3862757979" ref="restaurante"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="museutils.js" crc="163421577" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="whatinput.js" crc="86476730" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="museconfig.js" crc="168988563" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="379354253" ref="index:doble:galeria:triple:extra:turismo:restaurante"/>
+    <file name="jquery.musemenu.js" crc="146495465" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="jquery.watch.js" crc="104486786" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="webpro.js" crc="3848665353" ref="index:doble:galeria:triple:extra:turismo:restaurante"/>
+    <file name="musewpslideshow.js" crc="4041717617" ref="index:doble:galeria:triple:extra:turismo:restaurante"/>
+    <file name="jquery.museoverlay.js" crc="36492500" ref="index:doble:galeria:triple:extra:turismo:restaurante"/>
+    <file name="touchswipe.js" crc="404375771" ref="index:doble:galeria:triple:extra:turismo:restaurante"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="jquery.museresponsive.js" crc="4146931122" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="require.js" crc="244322403" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+  </folder>
+  <folder name="images">
+    <file name="a-pág.-maestra-favicon.ico" crc="3787940345" ref="index"/>
+    <file name="logo rio reu modificado.jpg" crc="4273499879" seo="true" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="blank.gif" crc="4208392903" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="icon-arrow-down-b-2561.png" crc="4088842791" ref="index"/>
+    <file name="facebook - copia.png" crc="4240779973" seo="true" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="instagram 1-1.jpg" crc="500035993" seo="true" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="booking 3.jpg" crc="215136675" seo="true" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="1a.jpg" crc="4141604354" seo="true" ref="index"/>
+    <file name="exterior 81.jpg" crc="4218245112" seo="true" ref="index"/>
+    <file name="2 (2)1.png" crc="39615208" seo="true" ref="index"/>
+    <file name="flecha-izquierda.png" crc="3975364059" ref="index"/>
+    <file name="flecha-derecha.png" crc="152649081" ref="index"/>
+    <file name="loading.gif" crc="3815509949" ref="index:doble:galeria:triple:extra"/>
+    <file name="seigaiha.png" crc="369090253" ref="index:turismo"/>
+    <file name="foto exterior 21-crop-u6311.jpg" crc="305319677" ref="index"/>
+    <file name="doble 1-u8279-fr.jpg" crc="3937139744" ref="index"/>
+    <file name="icono check 1.png" crc="4172361550" seo="true" ref="index:doble:triple:extra"/>
+    <file name="triple 1.jpg" crc="3807633110" ref="index"/>
+    <file name="extra 4-u8420-fr.jpg" crc="4203855503" ref="index"/>
+    <file name="camara 1-u10855-fr.png" crc="8340726" ref="index"/>
+    <file name="comida icono 1.png" crc="64315747" ref="index"/>
+    <file name="wifi 1.png" crc="4286219169" ref="index"/>
+    <file name="recepcion24hb1.png" crc="239056876" ref="index"/>
+    <file name="2a.jpg" crc="247990660" ref="index"/>
+    <file name="seigaiha2.png" crc="369090253" ref="index"/>
+    <file name="ubicacion 2.png" crc="3980522456" seo="true" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="telefono 2.png" crc="4136905748" seo="true" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="facebook 2-1.jpg" crc="154153555" seo="true" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="instagram 1.jpg" crc="3870561811" seo="true" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="booking.png" crc="3765805705" seo="true" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="correo 1.png" crc="4136497632" seo="true" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="globe 1.png" crc="4038846520" seo="true" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="doble 1-u8279-fr2.jpg" crc="3833000360" ref="index"/>
+    <file name="extra 4-u8420-fr2.jpg" crc="469620519" ref="index"/>
+    <file name="foto exterior 21-crop-u63112.jpg" crc="305319677" ref="index"/>
+    <file name="menu 21.jpg" crc="6676395" ref="index:doble:galeria:triple:extra:turismo:restaurante"/>
+    <file name="foto exterior 21-crop-u63113.jpg" crc="305319677" ref="index"/>
+    <file name="doble 1-u8279-fr3.jpg" crc="4257978397" ref="index"/>
+    <file name="triple 1-u8400-fr.jpg" crc="254810324" ref="index"/>
+    <file name="extra 4-u8420-fr3.jpg" crc="402125057" ref="index"/>
+    <file name="camara 1-u10855-fr2.png" crc="105676859" ref="index"/>
+    <file name="comida icono 1-u10823-fr.png" crc="87585010" ref="index"/>
+    <file name="wifi 1-u10874-fr.png" crc="70977987" ref="index"/>
+    <file name="recepcion24hb1-u14454-fr.png" crc="81294981" ref="index"/>
+    <file name="booking 32.jpg" crc="264340554" seo="true" ref="index:doble:galeria:triple:extra:turismo:restaurante:reservacion"/>
+    <file name="foto exterior 21-crop-u63114.jpg" crc="305319677" ref="index"/>
+    <file name="doble 1-u8279-fr4.jpg" crc="3935768194" ref="index"/>
+    <file name="extra 4-u8420-fr4.jpg" crc="3860680107" ref="index"/>
+    <file name="foto exterior 21-crop-u63115.jpg" crc="4093678425" ref="index"/>
+    <file name="doble 1-u8279-fr5.jpg" crc="3916043145" ref="index"/>
+    <file name="seigaiha-u25371-fr.png" crc="4176306049" ref="doble:galeria:triple:extra:restaurante"/>
+    <file name="man 1.png" crc="18734155" seo="true" ref="doble:triple:extra"/>
+    <file name="doble 1.jpg" crc="214416574" seo="true" ref="doble:triple:extra"/>
+    <file name="doble 4.jpg" crc="213066904" seo="true" ref="doble:triple:extra"/>
+    <file name="doble 3.jpg" crc="4178004964" seo="true" ref="doble:extra"/>
+    <file name="1a2.jpg" crc="4141604354" ref="doble:galeria:triple:extra:restaurante"/>
+    <file name="doble 4667x500.jpg" crc="124642293" seo="true" ref="doble"/>
+    <file name="doble 3667x500.jpg" crc="4247134830" seo="true" ref="doble"/>
+    <file name="doble 1484x363.jpg" crc="240659546" seo="true" ref="doble"/>
+    <file name="doble 4484x363.jpg" crc="3909305989" seo="true" ref="doble"/>
+    <file name="doble 3484x364.jpg" crc="392359736" seo="true" ref="doble"/>
+    <file name="1a-u667277-fr.jpg" crc="224891655" ref="doble:galeria:triple:extra:restaurante"/>
+    <file name="doble 1343x257.jpg" crc="3785221146" seo="true" ref="doble"/>
+    <file name="doble 4343x257.jpg" crc="35187881" seo="true" ref="doble"/>
+    <file name="doble 3343x257.jpg" crc="466803160" seo="true" ref="doble"/>
+    <file name="1a-u667277-fr2.jpg" crc="490924926" ref="doble"/>
+    <file name="doble 1-crop-u25454.jpg" crc="447241362" ref="doble"/>
+    <file name="doble 4-crop-u25878.jpg" crc="264117634" ref="doble"/>
+    <file name="doble 3-crop-u25758.jpg" crc="147460955" ref="doble"/>
+    <file name="56143218.jpg" crc="29280728" seo="true" ref="galeria"/>
+    <file name="56143223.jpg" crc="522446320" seo="true" ref="galeria"/>
+    <file name="56143239.jpg" crc="4002096321" seo="true" ref="galeria"/>
+    <file name="56143236.jpg" crc="306977494" seo="true" ref="galeria"/>
+    <file name="56143227.jpg" crc="4095086138" seo="true" ref="galeria"/>
+    <file name="69425717.jpg" crc="315849174" seo="true" ref="galeria"/>
+    <file name="69425724.jpg" crc="429059527" seo="true" ref="galeria"/>
+    <file name="69425726.jpg" crc="4236263150" seo="true" ref="galeria"/>
+    <file name="69425729.jpg" crc="4228025987" seo="true" ref="galeria"/>
+    <file name="69425731.jpg" crc="213066904" seo="true" ref="galeria"/>
+    <file name="69425733.jpg" crc="4178004964" seo="true" ref="galeria"/>
+    <file name="69425735.jpg" crc="3837717875" seo="true" ref="galeria"/>
+    <file name="69425737.jpg" crc="433878252" seo="true" ref="galeria"/>
+    <file name="69425738.jpg" crc="433848347" seo="true" ref="galeria"/>
+    <file name="69425740.jpg" crc="435210866" seo="true" ref="galeria"/>
+    <file name="69426998.jpg" crc="515484488" seo="true" ref="galeria"/>
+    <file name="69427009.jpg" crc="222754548" seo="true" ref="galeria"/>
+    <file name="69427010.jpg" crc="4226582053" seo="true" ref="galeria"/>
+    <file name="69427014.jpg" crc="454564312" seo="true" ref="galeria"/>
+    <file name="69427015.jpg" crc="212959430" seo="true" ref="galeria"/>
+    <file name="69427016.jpg" crc="4174321907" seo="true" ref="galeria"/>
+    <file name="69430811.jpg" crc="353798470" seo="true" ref="galeria"/>
+    <file name="5614321860x45.jpg" crc="152085093" seo="true" ref="galeria"/>
+    <file name="56143223-crop-u28650.jpg" crc="3994876796" ref="galeria"/>
+    <file name="56143239-crop-u28761.jpg" crc="172944038" ref="galeria"/>
+    <file name="56143236-crop-u28724.jpg" crc="3951566105" ref="galeria"/>
+    <file name="5614322760x45.jpg" crc="4163251450" seo="true" ref="galeria"/>
+    <file name="6942571760x45.jpg" crc="3864094023" seo="true" ref="galeria"/>
+    <file name="6942572460x45.jpg" crc="500887437" seo="true" ref="galeria"/>
+    <file name="6942572660x45.jpg" crc="3759420184" seo="true" ref="galeria"/>
+    <file name="6942572960x45.jpg" crc="177500553" seo="true" ref="galeria"/>
+    <file name="6942573160x45.jpg" crc="3775847561" seo="true" ref="galeria"/>
+    <file name="6942573360x45.jpg" crc="249920000" seo="true" ref="galeria"/>
+    <file name="6942573560x45.jpg" crc="3829673891" seo="true" ref="galeria"/>
+    <file name="6942573760x45.jpg" crc="451497089" seo="true" ref="galeria"/>
+    <file name="6942573860x45.jpg" crc="3826177255" seo="true" ref="galeria"/>
+    <file name="6942574060x45.jpg" crc="4024806755" seo="true" ref="galeria"/>
+    <file name="6942699860x45.jpg" crc="67474202" seo="true" ref="galeria"/>
+    <file name="6942700960x45.jpg" crc="4167205318" seo="true" ref="galeria"/>
+    <file name="6942701068x45.jpg" crc="418745482" seo="true" ref="galeria"/>
+    <file name="6942701460x45.jpg" crc="3781168255" seo="true" ref="galeria"/>
+    <file name="6942701560x45.jpg" crc="6671875" seo="true" ref="galeria"/>
+    <file name="6942701660x45.jpg" crc="3957455848" seo="true" ref="galeria"/>
+    <file name="6943081160x45.jpg" crc="4021967682" seo="true" ref="galeria"/>
+    <file name="56143223-crop-u286502.jpg" crc="3994876796" ref="galeria"/>
+    <file name="56143239-crop-u287612.jpg" crc="172944038" ref="galeria"/>
+    <file name="56143236-crop-u287242.jpg" crc="3951566105" ref="galeria"/>
+    <file name="56143223-crop-u286503.jpg" crc="3994876796" ref="galeria"/>
+    <file name="56143239-crop-u287613.jpg" crc="172944038" ref="galeria"/>
+    <file name="56143236-crop-u287243.jpg" crc="3951566105" ref="galeria"/>
+    <file name="56143223-crop-u286504.jpg" crc="3994876796" ref="galeria"/>
+    <file name="56143239-crop-u287614.jpg" crc="172944038" ref="galeria"/>
+    <file name="56143236-crop-u287244.jpg" crc="3951566105" ref="galeria"/>
+    <file name="1a-u660342-fr.jpg" crc="7298611" ref="galeria"/>
+    <file name="56143223-crop-u286505.jpg" crc="3994876796" ref="galeria"/>
+    <file name="56143239-crop-u287615.jpg" crc="172944038" ref="galeria"/>
+    <file name="56143236-crop-u287245.jpg" crc="3951566105" ref="galeria"/>
+    <file name="triple 2.jpg" crc="433878252" seo="true" ref="triple"/>
+    <file name="triple.jpg" crc="3930608092" seo="true" ref="triple"/>
+    <file name="triple 2667x500.jpg" crc="3817246135" seo="true" ref="triple"/>
+    <file name="triple600x450.jpg" crc="4038331520" seo="true" ref="triple"/>
+    <file name="doble 1409x307.jpg" crc="405796698" seo="true" ref="triple"/>
+    <file name="doble 4490x368.jpg" crc="3860335492" seo="true" ref="triple"/>
+    <file name="triple 2490x368.jpg" crc="4210608497" seo="true" ref="triple"/>
+    <file name="triple490x368.jpg" crc="482436535" seo="true" ref="triple"/>
+    <file name="doble 1260x196.jpg" crc="4248856840" seo="true" ref="triple"/>
+    <file name="doble 4312x234.jpg" crc="351212297" seo="true" ref="triple"/>
+    <file name="triple 2312x234.jpg" crc="74939388" seo="true" ref="triple"/>
+    <file name="triple312x235.jpg" crc="439275063" seo="true" ref="triple"/>
+    <file name="1a-u668523-fr.jpg" crc="15038696" ref="triple:extra"/>
+    <file name="doble 1282x211.jpg" crc="246126197" seo="true" ref="triple"/>
+    <file name="doble 4338x253.jpg" crc="4128816694" seo="true" ref="triple"/>
+    <file name="triple 2338x253.jpg" crc="4241028885" seo="true" ref="triple"/>
+    <file name="triple338x254.jpg" crc="489221518" seo="true" ref="triple"/>
+    <file name="extra 4.jpg" crc="83669111" seo="true" ref="extra"/>
+    <file name="doble 1473x355.jpg" crc="3921523360" seo="true" ref="extra"/>
+    <file name="doble 4567x425.jpg" crc="440092697" seo="true" ref="extra"/>
+    <file name="doble 3567x425.jpg" crc="3929049940" seo="true" ref="extra"/>
+    <file name="extra 4567x425.jpg" crc="3914229380" seo="true" ref="extra"/>
+    <file name="doble 1336x252.jpg" crc="385317078" seo="true" ref="extra"/>
+    <file name="doble 4-crop-u32651.jpg" crc="4020082210" ref="extra"/>
+    <file name="doble 3-crop-u32649.jpg" crc="34278771" ref="extra"/>
+    <file name="extra 4-crop-u33027.jpg" crc="395177836" ref="extra"/>
+    <file name="doble 1297x223.jpg" crc="158164850" seo="true" ref="extra"/>
+    <file name="doble 4356x267.jpg" crc="4265659035" seo="true" ref="extra"/>
+    <file name="doble 3356x267.jpg" crc="370450643" seo="true" ref="extra"/>
+    <file name="extra 4356x267.jpg" crc="219888002" seo="true" ref="extra"/>
+    <file name="menu-oficio_001.jpg" crc="3966156588" ref="restaurante"/>
+    <file name="menu-oficio_002.jpg" crc="4208004551" ref="restaurante"/>
+    <file name="menu-oficio_003.jpg" crc="4081809356" ref="restaurante"/>
+    <file name="menu-oficio_004.jpg" crc="205691782" ref="restaurante"/>
+    <file name="menu-cel-1.jpg" crc="62717883" seo="true" ref="restaurante"/>
+    <file name="menu-cel-2.jpg" crc="3896984929" seo="true" ref="restaurante"/>
+    <file name="menu-cel-3.jpg" crc="4130338080" seo="true" ref="restaurante"/>
+    <file name="menu-cel-4.jpg" crc="375262880" seo="true" ref="restaurante"/>
+    <file name="1a-u654960-fr.jpg" crc="3975818896" ref="restaurante"/>
+  </folder>
+  <file name="index.html" crc="4106585802" seo="true" mt="1509677481318" redirect="true"/>
+  <file name="doble.html" crc="527692684" seo="true" mt="1509676812416" redirect="true"/>
+  <file name="galeria.html" crc="277154960" seo="true" mt="1509676812416" redirect="true"/>
+  <file name="triple.html" crc="4066961303" seo="true" mt="1509676812416" redirect="true"/>
+  <file name="extra.html" crc="4273717253" seo="true" mt="1509676812416" redirect="true"/>
+  <file name="turismo.html" crc="4261301408" seo="true" mt="1509676812416" redirect="true"/>
+  <file name="restaurante.html" crc="487789565" seo="true" mt="1509676812416" redirect="true"/>
+  <file name="reservacion.html" crc="420035042" seo="true" mt="1509676812416" redirect="true"/>
+</manifest>

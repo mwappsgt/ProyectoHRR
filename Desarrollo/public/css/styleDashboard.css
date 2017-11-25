@@ -1,0 +1,247 @@
+th{
+	text-align: center;
+}
+
+tr{
+	text-align: center;
+}
+
+/*Version para Desktop*/
+@media only screen and (min-width: 768px) {
+
+	body{
+		background-color: #F4F3EF;
+	}
+
+
+	.cuadroEmpleados div{
+		border-top: solid 0px #AFADAA;
+		border-bottom: solid 1px #AFADAA;
+		border-left: solid 1px #AFADAA;
+		border-right: solid 1px #AFADAA;
+		text-align: center;
+		margin:0;
+		padding:0;
+	}
+
+	.cuadroEmpleados div:first-child{
+		border-top: solid 1px #AFADAA;
+	}
+
+	.cuadroGeneralEmpleados{
+		height: 600px;
+		overflow-y: scroll;
+		margin:0;
+		padding:0;
+	}
+
+	.cuadroEmpleados{
+		margin-top:35px;
+	}
+
+	.todo{
+		margin: 0 auto;
+	    padding: 0 auto;
+	}
+
+	.encabezado{
+		margin:0;
+		width: 100%;
+		height: 60px;
+		border-width: 0 0 2px 0;
+		border-style: solid;
+		border-color: #DDDDDD;
+	}
+
+	
+	.tituloDash{
+		color:#5E5E5E;
+		margin: 15px 0 0 3%;
+		font-weight: 600;
+		font-size: 20px;
+	}
+
+	.menuDesk{
+		display: block;
+	}
+
+	#TopMenuLeft{
+		/*background: #212120;*/
+		background-color: white; 
+		width: 96%;
+		height: 170px;
+		text-align: center;
+		color: #B4B4B4;
+		border-bottom: solid 2px #DDDDDD;
+		margin-left:2%;
+		margin-right:2%;
+	}
+
+	.navbarMenuPrincipal{
+		display: none;	
+	}
+
+	.menuPrincipal{
+		position: fixed;
+		height: 100%;
+		
+		/*background: #212120;*/
+		background-color: white; 
+	 	margin: 0;
+	    padding: 0;
+	    z-index: 2;
+	}
+
+	#menuLeft div:not(#TopMenuLeft){
+		padding: 3px 0 0 5px;
+		height: 40px;
+		width: 100%;
+	}
+
+
+	#menuLeft:nth-child(1){
+		margin:0;
+		/*color:#B4B4B4;*/
+		color: #AFADAA;
+		cursor: default;
+		font-weight: 600;
+		font-family: 'Muli', "Helvetica", Arial, sans-serif;
+		/*border-left: solid 2px #B4B4B4;*/
+		text-transform: uppercase;
+	}
+
+	div.col.elemTriang{
+		padding: 0
+	}
+
+	.elemLista{
+		margin: 10px 0 0 0;
+		/*color:#B4B4B4;*/
+		color: #AFADAA;
+		cursor: default;
+		font-weight: 600;
+		font-family: 'Muli', "Helvetica", Arial, sans-serif;
+		/*border-left: solid 2px #B4B4B4;*/
+		text-transform: uppercase;
+	}
+
+	.elemLista:hover{
+		color: #66615B;
+		border-left: solid 3px #AFADAA;
+		cursor: default;
+		font-weight: 600;
+		font-family: 'Muli', "Helvetica", Arial, sans-serif;
+	}
+
+	.MenuClassTexto{
+		margin: 10px 0 0 0;
+		color:#E1244B;
+		cursor: default;
+		border-left: solid 3px #E1244B;
+		font-weight: 600;
+		font-family: 'Muli', "Helvetica", Arial, sans-serif;
+		text-transform: uppercase;
+	}
+
+
+	.elemTriang{
+		content:'';
+		margin-top: -10px;
+		padding: 0;
+	}
+
+
+	.elemTriang:after {
+	    content:'';
+	    top: 100%;
+	    left: 0;
+	    right: 0;
+	    margin: 0;
+	    width: 0;
+	    height: 0;
+	    border-right: solid 20px #F4F3EF;
+	    border-top: solid 20px transparent;
+	    border-bottom: solid 20px transparent;
+	    float: right !important;
+	}
+
+	.elemListaIcon{
+		width: 10px;
+		text-align: right;
+
+	}
+
+	.elemListaText{
+		text-align: left;
+		margin-left: 5%;
+		font-size: 90%;
+	}
+
+	.contenido{
+		padding: 1% 10px 10px 1%;
+		margin-left: 50px;
+		margin-top: 30px;
+		height: 100%;
+
+		border-radius: 6px;
+	    box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+	    background-color: #FFFFFF;
+	}
+
+
+	.imgLogo{
+		width: 50%;
+		height: 300%;
+	}
+
+}
+
+
+
+/*Version para mobiles*/
+@media only screen and (max-width: 768px) {
+ 	
+ 	.imgLogo{
+		width: 100px;
+		height: 100px;
+	}
+
+
+	#TopMenuLeft{
+		/*background: #212120;*/
+		background-color: white; 
+		width: 96%;
+		height: 110px;
+		text-align: center;
+		color: #B4B4B4;
+		border-bottom: solid 2px #DDDDDD;
+		margin-left:2%;
+		margin-right:2%;
+	}
+
+	.navbarMenuPrincipal{
+		display: block;
+		text-align: right;
+		margin-top: 10px;
+	}
+
+	.menuDesk{
+		display: none;
+	}
+
+	.elemListaText{
+		border-width: 0 0 1px 0;
+		border-style: solid;
+		border-color: #DDDDDD;
+		text-align: center;
+	}
+
+	.elemListaText:hover{
+		font-weight: 600;
+		color: #66615B;
+		cursor: default;
+	}
+
+}
+
+

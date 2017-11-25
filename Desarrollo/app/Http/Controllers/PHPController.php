@@ -63,10 +63,54 @@ class PHPController extends Controller
         $habFinal = [];
         foreach ($hab as $i=>$h){
             array_push($habFinal,[
-                "num" => $h
+                "num" => $h,
+                "disp" => true,
+                "selected" => false
             ]);
         }
 
         return $habFinal;
     }
+
+
+    //----- v:archivos ---------
+
+
+    public function addFiles(Request $request){
+        if($request->file('archivo') != "") {
+            $file = $request->file('archivo');
+            $nombre = $file->getClientOriginalName();
+            
+            $id_arc = DB::table('archivospagos')->insertGetId(
+                [
+                    'nombre' => "".$nombre,
+                    'url' => "",
+                    //'id_reservacion' => intval($request->idTicket)
+                    'id_reservacion' => 1
+                ]
+            );
+
+            DB::table('archivospagos')
+                ->where('id', $id_arc)
+                ->update(['url' => ''.$id_arc.'_'.$nombre]);
+
+            \Storage::disk('local')->put(''.$id_arc.'_'.$nombre,  \File::get($file));
+
+            $query = "
+                    select * 
+                    from archivospagos            
+            ";
+
+            $tab = DB::select(DB::raw("" . $query));
+
+            return $tab;
+        }else{
+            return 0;
+        }
+    }
+
+
+    //--------------------------
+
+
 }
