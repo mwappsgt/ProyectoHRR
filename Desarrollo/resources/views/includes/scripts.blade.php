@@ -18,3 +18,8 @@
 <!-- Faicon -->
 <script src="https://use.fontawesome.com/2a40e14862.js"></script>
 <!-- Fin -->
+
+<!-- ChartJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<!-- Fin -->
+

@@ -391,15 +391,16 @@ app = angular.module("app",[],
         $scope.arrdelItems = [];
         
 
-        $http.post("/getToursTotales").then(
+        $http.post("/getEmpleados").then(
             function (obj) {
-                $scope.tours = obj.data
+                $scope.empleadosTotales = obj.data
+                console.log($scope.empleadosTotales)
             }
         ).catch(
             function (err) {
                 console.log(err)
             }
-            );
+        );
 
         $scope.delTour = function (id) {
 
@@ -415,41 +416,16 @@ app = angular.module("app",[],
 
         }
 
-        $scope.editTour = function () {
-            console.log($scope.toursArrEdit)
-            $http.post("/updateTour", { data: $scope.toursArrEdit }).then(
-                function (obj) {
-                    $scope.tours = obj.data
-                }
-            ).catch(
-                function (err) {
-                    alert("Error")
-                }
-                );
-        }
-
-        $scope.editTourTmp = function (id) {
-            $http.post("/getOneTour", { id: id }).then(
-                function (obj) {
-                    $scope.toursArrEdit = obj.data[0]
-                    console.log($scope.toursArrEdit)
-                }
-            ).catch(
-                function (err) {
-                    console.log(err)
-                }
-                );
-        }
-
-
-
-
-        $scope.addTour = function () {
+        $scope.addEmpleado = function () {
             $http.post("/addEmpleado", {
                 data: $scope.empleados
             }).then(
                 function (obj) {
-                    alert(obj.data)
+                    $scope.empleados.nombre = "";
+                    $scope.empleados.puesto = "";
+                    $scope.empleados.telefono = "";
+                    $scope.empleados.foto = "";
+                    alert("Ingresado con éxito")
                 }
                 ).catch(
                 function (err) {
@@ -458,6 +434,78 @@ app = angular.module("app",[],
                 );
         }
 
+
+    }])
+
+    .controller('estadisticaController', ['$scope', '$http', function ($scope, $http) {  // Controlador general
+
+        var ctx = document.getElementById('myChart').getContext('2d');
+    
+        var line = new Chart(ctx, { 
+            "type": "line", 
+            "data": { 
+                "labels": [1,2,3,4,5,6,7],
+                "datasets": [{ 
+                    "label": "Reservaciones por día", 
+                    "data": [65, 59, 80, 81, 56, 55, 40],
+                    "fill": false, 
+                    "borderColor": "rgb(75, 192, 192)", 
+                    "lineTension": 0.1
+                }]
+            }, 
+            "options": {} });
+
+        
+        var ctx2 = document.getElementById('myChart2').getContext('2d');
+
+        var line2 = new Chart(ctx2, {
+            "type": "line",
+            "data": {
+                "labels": [1, 2, 3, 4, 5, 6, 7],
+                "datasets": [{
+                    "label": "Reservaciones canceladas por día",
+                    "data": [65, 59, 80, 81, 56, 55, 40],
+                    "fill": false,
+                    "borderColor": "rgb(75, 192, 192)",
+                    "lineTension": 0.1
+                }]
+            },
+            "options": {}
+        });
+
+        var ctx3 = document.getElementById('myChart3').getContext('2d');
+
+        var line3 = new Chart(ctx3, {
+            "type": "line",
+            "data": {
+                "labels": [1, 2, 3, 4, 5, 6, 7],
+                "datasets": [{
+                    "label": "Ingresos al día",
+                    "data": [65, 59, 80, 81, 56, 55, 40],
+                    "fill": false,
+                    "borderColor": "rgb(75, 192, 192)",
+                    "lineTension": 0.1
+                }]
+            },
+            "options": {}
+        });
+
+        var ctx4 = document.getElementById('myChart4').getContext('2d');
+
+        var line4 = new Chart(ctx4, {
+            "type": "line",
+            "data": {
+                "labels": [1, 2, 3, 4, 5, 6, 7],
+                "datasets": [{
+                    "label": "Valoración promedio del hotel por día",
+                    "data": [65, 59, 80, 81, 56, 55, 40],
+                    "fill": false,
+                    "borderColor": "rgb(75, 192, 192)",
+                    "lineTension": 0.1
+                }]
+            },
+            "options": {}
+        });
 
     }])
 

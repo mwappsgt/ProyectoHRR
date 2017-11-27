@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-08-2017 a las 20:45:04
+-- Tiempo de generación: 26-10-2017 a las 04:32:01
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 7.0.13
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `rio_reu_db`
 --
+CREATE DATABASE IF NOT EXISTS `rio_reu_db` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `rio_reu_db`;
 
 -- --------------------------------------------------------
 
@@ -31,6 +33,28 @@ CREATE TABLE `ahc` (
   `id_hotel` int(11) NOT NULL,
   `id_caracthotel` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `archivospagos`
+--
+
+CREATE TABLE `archivospagos` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(500) DEFAULT NULL,
+  `url` varchar(500) DEFAULT NULL,
+  `id_reservacion` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `archivospagos`
+--
+
+INSERT INTO `archivospagos` (`id`, `nombre`, `url`, `id_reservacion`) VALUES
+(1, '71_carga.csv', '1_71_carga.csv', 1),
+(2, '73_informepormes.csv', '2_73_informepormes.csv', 1),
+(3, 'carga.csv', '3_carga.csv', 1);
 
 -- --------------------------------------------------------
 
@@ -291,6 +315,13 @@ ALTER TABLE `ahc`
   ADD KEY `id_caracthotel` (`id_caracthotel`);
 
 --
+-- Indices de la tabla `archivospagos`
+--
+ALTER TABLE `archivospagos`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_reservacion` (`id_reservacion`);
+
+--
 -- Indices de la tabla `arh`
 --
 ALTER TABLE `arh`
@@ -381,6 +412,11 @@ ALTER TABLE `valoraciones`
 ALTER TABLE `ahc`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT de la tabla `archivospagos`
+--
+ALTER TABLE `archivospagos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
 -- AUTO_INCREMENT de la tabla `arh`
 --
 ALTER TABLE `arh`
@@ -440,6 +476,12 @@ ALTER TABLE `valoraciones`
 ALTER TABLE `ahc`
   ADD CONSTRAINT `ahc_ibfk_1` FOREIGN KEY (`id_hotel`) REFERENCES `hotel` (`id`),
   ADD CONSTRAINT `ahc_ibfk_2` FOREIGN KEY (`id_caracthotel`) REFERENCES `caracthotel` (`id`);
+
+--
+-- Filtros para la tabla `archivospagos`
+--
+ALTER TABLE `archivospagos`
+  ADD CONSTRAINT `archivospagos_ibfk_1` FOREIGN KEY (`id_reservacion`) REFERENCES `reservacion` (`id`);
 
 --
 -- Filtros para la tabla `arh`

@@ -39,6 +39,15 @@
 		            </div>
 		        </div>
 
+				<div class="campo row">
+		            <div class="textoLabel col-md-12">
+		                <label for="puesto">Telefono</label>
+		            </div>
+		            <div class="textoInput col-md-12">
+		                <input type="text" ng-model="empleados.telefono" class="form-control" name="telefono" id="telefono">
+		            </div>
+		        </div>
+
 		        <div class="campo row">
 		            <div class="textoLabel col-md-12">
 		                <label for="telefono">Foto</label>
@@ -67,18 +76,18 @@
 
 	<div class="cuadroGeneralEmpleados row">
 
-		<div ng-repeat="t in [1,2,3,4,5,6,7,8,9,10,11]" class="cuadroEmpleados col col-sm-4 col-md-4 col-lg-4">
+		<div ng-repeat="e in empleadosTotales track by $index" class="cuadroEmpleados col col-sm-4 col-md-4 col-lg-4">
 			<div>
 				<img src="./img/rioreup.png" alt="">
 			</div>
 			<div>
-				Puesto
+				[[ e.puesto  ]]
 			</div>
 			<div>
-				Juan Mérida
+				[[ e.nombre ]]
 			</div>
 			<div>
-				estrellas
+				[[ e.estrellas ]]
 			</div>	
 		</div>
 

@@ -127,6 +127,8 @@ Route::post('/delTour', 'Controller@delTour');
 Route::post('/getOneTour', 'Controller@getOneTour');
 Route::post('/updateTour', 'Controller@updateTour');
 
+Route::post('/getEmpleados', 'Controller@getEmpleados');
+Route::post('/addEmpleado', 'Controller@addEmpleado');
 
 
 

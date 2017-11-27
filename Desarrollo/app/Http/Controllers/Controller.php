@@ -283,4 +283,34 @@ class Controller extends BaseController
     }
 
 
+    //Empleados
+
+    public function addEmpleado(Request $request){
+        $data = $request->data;
+
+        $id = DB::table('empleados')->insertGetId(
+            [
+                'nombre' => ''.$data["nombre"],
+                'puesto' => ''.$data["puesto"],
+                'telefono' => ''.$data["telefono"],
+                'foto' => ''.$data["foto"]
+            ]
+        );
+
+        return $id;
+        
+    }
+
+    public function getEmpleados(Request $request){
+        // Seleccionar empleados totales
+        $query = "
+            select * from empleados
+        ";
+            
+        $res = DB::select( DB::raw("".$query));
+
+        return $res;
+    }
+
+
 }
